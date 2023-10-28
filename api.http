@@ -1,0 +1,20 @@
+GET http://localhost:3001/student HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3001/student HTTP/1.1
+Content-Type: application/json
+{
+    "name": "name",
+    "class": "class",
+    "section": "section",
+    "age": "age",
+    "nationality": "nationality",
+    "phoneNum": "phoneNum",
+}
+
+###
+DELETE http://localhost:3001/student/${id} HTTP/1.1
+Content-Type: application/json
+
+###
