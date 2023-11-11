@@ -6,6 +6,7 @@ import SideDrower from "../../coreComponent/sideDrower";
 import Header from "../../coreComponent/header";
 import LandingPage from "../landingPage";
 import CreateStudent from "../createStudent";
+import StudentDetails from "../studentDetails";
 const MainPage = () => {
 
   return (
@@ -15,8 +16,11 @@ const MainPage = () => {
         <Header />
         <Routes>
           <Route path="/main" element={<Student />} />
+          <Route path="/main/:studentClass" element={<Student />} />
           <Route path="/sections" element={<LandingPage />} />
           <Route path="/newstudent" element={<CreateStudent />} />
+          <Route path="/studentDetails/:id" element={<StudentDetails/>} />
+
         </Routes>
       </div>
     </div>

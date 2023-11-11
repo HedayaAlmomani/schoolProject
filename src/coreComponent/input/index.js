@@ -1,13 +1,14 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import SVG from "react-inlinesvg";
-import ReadOnlyField from '../readOnlyField'
+import ReadOnlyField from "../readOnlyField";
 import {
   copyIcon,
   showPasswordIcon,
   hidePasswordIcon,
   clearIcon,
 } from "../../icons";
+
 import "./style.scss";
 
 const Input = ({
